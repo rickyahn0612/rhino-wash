@@ -139,6 +139,48 @@ body {
   text-align: center;
 }
 
+.about-us-home-section {
+
+  .left-section {
+    width: 40%;
+    float: left;
+    height: 400px;
+
+    ul {
+
+      li {
+        list-style: none;
+        margin-bottom: 60px;
+
+        .about-list {
+          .icon-container {
+            margin-right: 40px;
+            width: 55px;
+            padding: 15px 0 15px 0;
+            @include border-radius(80px);
+            float: left;
+            border: solid #cfcfcf 1px;
+            text-align: center;
+            i {
+              color: #D2583E;
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right-section {
+    float: right;
+    width: 55%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
 // .callboxes {
 //   width: 315px;
 //   float: left;
