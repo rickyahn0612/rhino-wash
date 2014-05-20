@@ -329,5 +329,27 @@ body {
     }
   }
 
+  .callboxes-list {
+    text-align: center;
+    ul {
+      margin: 0 !important;
+      padding: 0 !important;
+      li {
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        margin-left: -2px;
+
+        &:nth-child(4) {
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+
+  .section-header-container {
+    width: 280px;
+  }
+
 
 }
