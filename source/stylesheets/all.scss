@@ -23,7 +23,7 @@ body {
   height: 0px;
   background: #444444;
   border-bottom: 2px solid #404040;
-  padding: 15px 0 30px 0;
+  padding: 10px 0 25px 0;
 
   .left-section {
     color: white;
@@ -116,19 +116,29 @@ body {
 }
 
 .callboxes-list {
-
+  text-align: center;
   ul {
+    margin: 0 !important;
+    padding: 0 !important;
     li {
       list-style: none;
       display: inline-block;
-      margin-right: 8%;
-      width: 18%;
+      width: 19%;
+      margin-left: -2px;
 
       &:nth-child(4) {
         margin-right: 0 !important;
       }
     }
   }
+}
+
+.services-name-box {
+  position: relative;
+  top: -3px;
+  background: #EEEEEE;
+  padding: 1px 0 1px 0;
+  width: 101%;
 }
 
 .seperator-section {
@@ -154,18 +164,25 @@ body {
 
         .about-list {
           .icon-container {
-            margin-right: 40px;
+            margin-right: 1%;
             width: 55px;
             padding: 15px 0 15px 0;
             @include border-radius(80px);
             float: left;
             border: solid #cfcfcf 1px;
             text-align: center;
+            position: relative;
+            top: 20px;
             i {
               color: #D2583E;
               font-size: 25px;
             }
           }
+        }
+
+        .content-container {
+          float: right;
+          width: 85%;
         }
       }
     }
@@ -181,11 +198,14 @@ body {
   }
 }
 
-// .callboxes {
-//   width: 315px;
-//   float: left;
-//   margin-right: 20px;
-// }
+@media all and (max-width: 1260px) {
+
+  .content-container {
+    font-size: 12px;
+    width: 75% !important;
+  }
+}
+
 
 @media all and (max-width: 1062px) {
   .nav-container {
@@ -228,6 +248,22 @@ body {
       }
     }
   }  
+
+  .about-us-home-section{
+
+    .left-section {
+      width: 100% !important;
+    .content-container {
+      font-size: 14px;
+      width: 85% !important;
+    }
+    }
+
+
+    .right-section {
+      display: none;
+    }
+  }
 
 }
 
@@ -273,4 +309,25 @@ body {
       padding: 5px 0 10px 0;
     }
   }
+
+  .about-us-home-section{
+
+    .left-section {
+      width: 100% !important;
+      .content-container {
+        float: left !important;
+        width: 100% !important;
+      }
+    }
+
+    .icon-container {
+      display: none;
+    }
+
+    .right-section {
+      display: none;
+    }
+  }
+
+
 }
