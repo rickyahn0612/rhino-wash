@@ -286,7 +286,7 @@ html, body {
     @include transition-timing-function(linear);
 
     img {
-      width: 210px !important;
+      width: 190px !important;
       @include transition-duration(0.20s);
       @include transition-timing-function(linear);
     }
