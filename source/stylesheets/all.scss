@@ -300,11 +300,12 @@ html, body {
   }
 
   .banner-contents-container {
-    width: 360px;
+    width: 200px;
     height: 200px;
     color: white;
     z-index: 1000;
     margin-top: 90px;
+    font-size: 12px;
 
     .banner-button {
       @include border-radius(3px);
@@ -319,9 +320,12 @@ html, body {
 
     .left-section {
       width: 100% !important;
+      float: left !important;
+      padding: 0 !important;
+      margin: 0 !important;
       .content-container {
+        width: 90% !important;
         float: left !important;
-        width: 100% !important;
       }
     }
 
@@ -335,7 +339,7 @@ html, body {
   }
 
   .callboxes-list {
-    text-align: center;
+    text-align: left !important;
     ul {
       margin: 0 !important;
       padding: 0 !important;
