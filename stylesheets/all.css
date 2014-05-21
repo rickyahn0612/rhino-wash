@@ -291,7 +291,7 @@ html, body {
     transition-timing-function: linear; }
     /* line 288, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .logo img {
-      width: 210px !important;
+      width: 190px !important;
       -webkit-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
       -o-transition-duration: 0.2s;
