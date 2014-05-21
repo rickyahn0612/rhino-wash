@@ -7,6 +7,3 @@ $ ->
     $(@).find('.services-name-box').animate({ backgroundColor: "#EEEEE" },400)
     $(@).find('.services-name-box').css("color", "black")
     $(@).find('.callboxes-overlay').fadeOut()
-
-  $("body").on touchmove: (e) ->
-    alert 'hey'
