@@ -294,19 +294,19 @@ html, body {
 
   #banner-container {
     img {
-      height: 300px !important;
+      height: 250px !important;
       @include transition-duration(0.20s);
       @include transition-timing-function(linear);
     }
   }
 
   .banner-contents-container {
-    width: 200px;
+    width: 270px;
     height: 200px;
     color: white;
     z-index: 1000;
-    margin-top: 90px;
-    font-size: 12px;
+    margin-top: 0px;
+    font-size: 14px;
 
     .banner-button {
       @include border-radius(3px);
@@ -340,10 +340,12 @@ html, body {
   }
 
   .callboxes-list {
-    text-align: left !important;
+    text-align: center !important;
+
     ul {
       margin: 0 !important;
       padding: 0 !important;
+
       li {
         list-style: none;
         display: inline-block;
