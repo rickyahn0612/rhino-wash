@@ -280,7 +280,7 @@ html, body {
   .logo {
     float: left !important;
     position: relative;
-    top: -30px;
+    top: -15px !important;
     -webkit-transition-duration: 0.2s;
     -moz-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
@@ -291,7 +291,7 @@ html, body {
     transition-timing-function: linear; }
     /* line 288, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .logo img {
-      width: 250px !important;
+      width: 210px !important;
       -webkit-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
       -o-transition-duration: 0.2s;
