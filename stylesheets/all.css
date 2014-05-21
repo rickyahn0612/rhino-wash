@@ -364,4 +364,7 @@ html, body {
 
   /* line 355, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .section-header-container {
-    width: 280px; } }
+    width: 240px; }
+    /* line 357, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    .section-header-container h2 {
+      font-size: 14px; } }
