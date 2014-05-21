@@ -303,7 +303,7 @@ html, body {
 
   /* line 296, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   #banner-container img {
-    height: 300px !important;
+    height: 250px !important;
     -webkit-transition-duration: 0.2s;
     -moz-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
@@ -315,12 +315,12 @@ html, body {
 
   /* line 303, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .banner-contents-container {
-    width: 200px;
+    width: 270px;
     height: 200px;
     color: white;
     z-index: 1000;
-    margin-top: 90px;
-    font-size: 12px; }
+    margin-top: 0px;
+    font-size: 14px; }
     /* line 311, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .banner-contents-container .banner-button {
       -webkit-border-radius: 3px;
@@ -352,24 +352,24 @@ html, body {
 
   /* line 342, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .callboxes-list {
-    text-align: left !important; }
-    /* line 344, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    text-align: center !important; }
+    /* line 345, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .callboxes-list ul {
       margin: 0 !important;
       padding: 0 !important; }
-      /* line 347, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+      /* line 349, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
       .callboxes-list ul li {
         list-style: none;
         display: inline-block;
         width: 100%;
         margin-left: -2px; }
-        /* line 353, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+        /* line 355, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
         .callboxes-list ul li:nth-child(4) {
           margin-right: 0 !important; }
 
-  /* line 360, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 362, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .section-header-container {
     width: 240px; }
-    /* line 362, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    /* line 364, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .section-header-container h2 {
       font-size: 14px; } }
