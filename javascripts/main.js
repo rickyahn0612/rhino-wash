@@ -3,7 +3,7 @@
     $('.callboxes').on('mouseenter', function(e) {
       $(this).find('.services-name-box').animate({
         backgroundColor: "#D2583E"
-      }, 1000);
+      }, 400);
       $(this).find('.services-name-box').css("color", "white");
       return $(this).find('.callboxes-overlay').fadeIn();
     });
