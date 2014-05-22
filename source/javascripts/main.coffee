@@ -7,3 +7,7 @@ $ ->
     $(@).find('.services-name-box').animate({ backgroundColor: "#EEEEE" },400)
     $(@).find('.services-name-box').css("color", "black")
     $(@).find('.callboxes-overlay').fadeOut()
+
+  $(document).scroll ->
+    winScroll = $(document).scrollTop()
+    console.log winScroll
