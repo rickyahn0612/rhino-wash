@@ -7,12 +7,17 @@
       $(this).find('.services-name-box').css("color", "white");
       return $(this).find('.callboxes-overlay').fadeIn();
     });
-    return $('.callboxes').on('mouseleave', function(e) {
+    $('.callboxes').on('mouseleave', function(e) {
       $(this).find('.services-name-box').animate({
         backgroundColor: "#EEEEE"
       }, 400);
       $(this).find('.services-name-box').css("color", "black");
       return $(this).find('.callboxes-overlay').fadeOut();
+    });
+    return $(document).scroll(function() {
+      var winScroll;
+      winScroll = $(document).scrollTop();
+      return console.log(winScroll);
     });
   });
 
