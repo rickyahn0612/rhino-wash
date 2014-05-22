@@ -27,9 +27,7 @@ html, body {
 }
 
 #table-nav-container {
-  width: 300px;
-  background: white !important;
-  border: solid white 1px;
+  width: 15px;
   position: absolute;
   top: 0;
   right: 0;
@@ -41,8 +39,9 @@ html, body {
     top: 70px;
     right: 10px;
     opacity: 0;
-    background: #F9F8F8;
-    padding: 5px 10px 5px 10px;
+    color: white;
+    background: #D2583E;
+    padding: 10px 15px 10px 15px;
 
     i {
       float: right;
@@ -52,12 +51,11 @@ html, body {
 .drop-down {
   height: 0;
   overflow: hidden;
-  width: 320px !important;
   background: white;
   position: absolute;
-  right: 10px;
-  top: 100px;
-  padding-left: 0px;
+  right: 9px;
+  top: 125px;
+  width: 200px;
   ul {
       margin: 0;
     li {
@@ -298,16 +296,25 @@ html, body {
   }
 }
 
-@media all and (max-width: 1260px) {
+@media all and (max-width: 20000px) {
 
   .content-container {
     font-size: 12px;
     width: 75% !important;
   }
+
+  .drop-down {
+    opacity: 0;
+  }
 }
 
 
 @media all and (max-width: 1062px) {
+
+  .drop-down {
+    opacity: 0;
+  }
+
   .nav-container {
     width: 500px !important;
     font-size: 13px;
@@ -382,7 +389,7 @@ html, body {
     @include transition-timing-function(linear);
 
     img {
-      width: 190px !important;
+      width: 250px !important;
       @include transition-duration(0.20s);
       @include transition-timing-function(linear);
     }
