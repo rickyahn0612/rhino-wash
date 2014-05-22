@@ -1,4 +1,7 @@
 $ ->
+  $('html, body').fadeIn(1000)
+  
+  $('.banner-contents-container').animate({'right': 0, 'opacity': 1}, 2000)
   $('.callboxes').on 'mouseenter', (e) ->
     $(@).find('.services-name-box').animate({ backgroundColor: "#D2583E" },400)
     $(@).find('.services-name-box').css("color", "white")
@@ -8,6 +11,10 @@ $ ->
     $(@).find('.services-name-box').css("color", "black")
     $(@).find('.callboxes-overlay').fadeOut()
 
-  $(document).scroll ->
-    winScroll = $(document).scrollTop()
-    console.log winScroll
+  $(window).scroll ->
+    winScroll = $(window).scrollTop()
+    if winScroll > 200 
+      $('.callboxes-list').animate({'top': 0, 'opacity': 1}, 1000)
+    if winScroll > 1200
+      $('.about-list').animate({'top': 50, 'opacity': 1}, 2000)
+
