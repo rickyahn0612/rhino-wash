@@ -15,7 +15,7 @@ $ ->
 
   $('#tablet-nav').on 'click', (e) ->
     if state == false
-      $('.drop-down').animate({'height': 200}, 0)
+      $('.drop-down').animate({'height': 186}, 0)
       state = true
     else
       $('.drop-down').animate({'height': 0}, 0)
