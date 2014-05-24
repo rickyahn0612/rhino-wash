@@ -24,7 +24,7 @@
     $('#tablet-nav').on('click', function(e) {
       if (state === false) {
         $('.drop-down').animate({
-          'height': 200
+          'height': 186
         }, 0);
         return state = true;
       } else {

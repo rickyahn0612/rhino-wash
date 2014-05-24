@@ -36,52 +36,74 @@ html, body {
   opacity: 0;
   color: white;
   background: #D2583E;
-  padding: 10px 15px 10px 15px; }
-  /* line 46, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  padding: 10px 15px 10px 15px;
+  cursor: pointer; }
+  /* line 47, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   #tablet-nav i {
     float: right; }
 
-/* line 51, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+/* line 52, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
 .drop-down {
-  height: 0;
   overflow: hidden;
   background: white;
   position: absolute;
   right: 9px;
   top: 125px;
-  width: 200px; }
-  /* line 59, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  width: 200px;
+  height: 0;
+  padding: 0;
+  z-index: 10000; }
+  /* line 62, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .drop-down ul {
-    margin: 0; }
-    /* line 61, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    position: relative;
+    top: -19px;
+    margin: 0;
+    padding: 0; }
+    /* line 67, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .drop-down ul li {
       list-style: none;
-      margin-bottom: 20px;
-      padding: 0; }
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px 0 15px 6px;
+      cursor: pointer;
+      font-size: 13px; }
+      /* line 75, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+      .drop-down ul li:hover {
+        background: #D2583E;
+        color: white;
+        text-decoration: underline;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration: 0.4s;
+        -o-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        -webkit-transition-timing-function: linear;
+        -moz-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        transition-timing-function: linear; }
 
-/* line 69, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+/* line 86, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
 #top-header {
   height: 0px;
   background: #444444;
   border-bottom: 2px solid #404040;
   padding: 10px 0 25px 0; }
-  /* line 75, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 92, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   #top-header .left-section {
     color: white;
     font-size: 12px; }
 
-/* line 81, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+/* line 98, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
 #main-nav {
   padding-top: 40px;
   background: #172330;
   width: 100%;
   height: 65px; }
-  /* line 87, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 104, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   #main-nav .logo {
     float: left;
     position: relative;
     top: -30px; }
-    /* line 92, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    /* line 109, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     #main-nav .logo img {
       width: 320px;
       -webkit-transition-duration: 0.2s;
@@ -92,7 +114,7 @@ html, body {
       -moz-transition-timing-function: linear;
       -o-transition-timing-function: linear;
       transition-timing-function: linear; }
-  /* line 99, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 116, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   #main-nav .nav-container {
     width: 60%;
     float: right;
@@ -107,17 +129,17 @@ html, body {
     -moz-transition-timing-function: linear;
     -o-transition-timing-function: linear;
     transition-timing-function: linear; }
-    /* line 109, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    /* line 126, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     #main-nav .nav-container ul li {
       width: 15%;
       display: inline-block;
       color: #fff;
       font-weight: 100; }
 
-/* line 119, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+/* line 136, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
 #banner-container {
   position: relative; }
-  /* line 121, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 138, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   #banner-container img {
     width: 100%;
     height: 600px;
@@ -126,7 +148,7 @@ html, body {
     left: 0;
     z-index: -1; }
 
-/* line 131, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+/* line 148, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
 .banner-contents-container {
   width: 500px;
   height: 200px;
@@ -134,9 +156,9 @@ html, body {
   z-index: 1000;
   margin-top: 350px;
   position: relative;
-  right: -300px;
+  right: -100px;
   opacity: 0; }
-  /* line 141, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 158, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .banner-contents-container .banner-button {
     -webkit-transform: skew(-15deg);
     -moz-transform: skew(-15deg);
@@ -151,7 +173,7 @@ html, body {
     text-align: center;
     padding: 5px 0 10px 0; }
 
-/* line 153, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+/* line 170, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
 .section-header-container {
   color: white;
   background: black;
@@ -164,36 +186,37 @@ html, body {
   border-right: solid #D2583E 5px;
   text-align: center;
   z-index: 1000; }
-  /* line 166, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 183, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .section-header-container h2 {
     position: relative;
     top: 10px; }
 
-/* line 173, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+/* line 190, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
 .callboxes-list {
   opacity: 0;
   position: relative;
   top: 100px;
   text-align: center; }
-  /* line 178, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 195, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .callboxes-list ul {
     margin: 0 !important;
     padding: 0 !important; }
-    /* line 181, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    /* line 198, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .callboxes-list ul li {
+      cursor: pointer;
       list-style: none;
       display: inline-block;
       width: 19%;
       margin-left: -2px; }
-      /* line 187, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+      /* line 205, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
       .callboxes-list ul li:nth-child(4) {
         margin-right: 0 !important; }
 
-/* line 194, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+/* line 212, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
 .callboxes {
   position: relative; }
 
-/* line 198, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+/* line 216, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
 .callboxes-overlay {
   background: #361919;
   background: rgba(54, 25, 25, 0.7);
@@ -203,13 +226,13 @@ html, body {
   z-index: 1000;
   display: none;
   color: white; }
-  /* line 208, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 226, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .callboxes-overlay .container {
     padding-top: 10px;
     font-weight: bold;
     text-align: center; }
 
-/* line 230, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+/* line 248, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
 .services-name-box {
   position: relative;
   top: -3px;
@@ -218,7 +241,7 @@ html, body {
   width: 101%;
   z-index: 1000; }
 
-/* line 239, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+/* line 257, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
 .seperator-section {
   background-image: url("../images/bg.png");
   height: 400px;
@@ -226,21 +249,21 @@ html, body {
   color: white;
   text-align: center; }
 
-/* line 249, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+/* line 267, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
 .about-us-home-section .left-section {
   width: 40%;
   float: left;
   height: 400px; }
-  /* line 256, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 274, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .about-us-home-section .left-section ul li {
     list-style: none;
-    margin-bottom: 60px; }
-    /* line 260, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    margin-bottom: 30px; }
+    /* line 278, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .about-us-home-section .left-section ul li .about-list {
       position: relative;
-      top: -100px;
+      top: -40px;
       opacity: 0; }
-      /* line 264, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+      /* line 282, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
       .about-us-home-section .left-section ul li .about-list .icon-container {
         margin-right: 1%;
         width: 55px;
@@ -255,52 +278,106 @@ html, body {
         text-align: center;
         position: relative;
         top: 20px; }
-        /* line 274, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+        /* line 292, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
         .about-us-home-section .left-section ul li .about-list .icon-container i {
           color: #D2583E;
           font-size: 25px; }
-    /* line 281, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    /* line 299, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .about-us-home-section .left-section ul li .content-container {
       float: right;
       width: 85%; }
-/* line 289, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+/* line 307, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
 .about-us-home-section .right-section {
   float: right;
   width: 55%; }
-  /* line 293, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 311, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .about-us-home-section .right-section img {
     width: 100%; }
 
 @media all and (max-width: 20000px) {
-  /* line 301, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 319, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .content-container {
     font-size: 12px;
     width: 75% !important; }
 
-  /* line 306, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 324, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .drop-down {
     opacity: 0; } }
+@media all and (max-width: 1455px) {
+  /* line 330, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .callboxes-list {
+    text-align: center !important; }
+    /* line 333, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    .callboxes-list ul {
+      margin: 0 !important;
+      padding: 0 !important; }
+      /* line 337, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+      .callboxes-list ul li {
+        list-style: none;
+        margin-left: -2px; }
+        /* line 341, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+        .callboxes-list ul li:nth-child(4) {
+          margin-right: 0 !important; }
+
+  /* line 348, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .section-header-container {
+    width: 240px; }
+    /* line 350, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    .section-header-container h2 {
+      font-size: 14px; }
+
+  /* line 357, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .callboxes-overlay .container {
+    font-size: 14px; } }
+@media all and (max-width: 1300px) {
+  /* line 371, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .bigres-text {
+    opacity: 0 !important; }
+
+  /* line 375, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .alt-text {
+    opacity: 1 !important;
+    position: relative;
+    top: -135px; }
+
+  /* line 382, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .callboxes-list {
+    text-align: center !important; }
+    /* line 385, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    .callboxes-list ul {
+      margin: 0 !important;
+      padding: 0 !important; }
+      /* line 389, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+      .callboxes-list ul li {
+        list-style: none;
+        margin-left: -2px; }
+        /* line 393, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+        .callboxes-list ul li:nth-child(4) {
+          margin-right: 0 !important; }
+
+  /* line 400, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .section-header-container {
+    width: 240px; }
+    /* line 402, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    .section-header-container h2 {
+      font-size: 14px; }
+
+  /* line 409, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .callboxes-overlay .container {
+    font-size: 12px; } }
 @media all and (max-width: 1062px) {
-  /* line 314, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 424, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .drop-down {
     opacity: 0; }
 
-  /* line 318, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 428, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .nav-container {
     width: 500px !important;
-    font-size: 13px;
+    font-size: 14px;
     padding: 0 !important;
-    margin: 0 !important;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -webkit-transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear; }
+    margin: 0 !important; }
 
-  /* line 327, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 435, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .logo {
     float: left;
     position: relative;
@@ -313,7 +390,7 @@ html, body {
     -moz-transition-timing-function: linear;
     -o-transition-timing-function: linear;
     transition-timing-function: linear; }
-    /* line 334, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    /* line 442, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .logo img {
       width: 250px !important;
       -webkit-transition-duration: 0.2s;
@@ -325,11 +402,47 @@ html, body {
       -o-transition-timing-function: linear;
       transition-timing-function: linear; } }
 @media all and (max-width: 835px) {
-  /* line 344, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
-  .nav-container {
-    display: none; }
+  /* line 452, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .callboxes-list {
+    text-align: center !important; }
+    /* line 455, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    .callboxes-list ul {
+      margin: 0 !important;
+      padding: 0 !important; }
+      /* line 459, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+      .callboxes-list ul li {
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        margin-left: -2px; }
+        /* line 465, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+        .callboxes-list ul li:nth-child(4) {
+          margin-right: 0 !important; }
 
-  /* line 348, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 472, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .section-header-container {
+    width: 240px; }
+    /* line 474, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    .section-header-container h2 {
+      font-size: 14px; }
+
+  /* line 481, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .callboxes-overlay .container {
+    font-size: 17px; }
+
+  /* line 489, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .nav-container {
+    display: none;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear; }
+
+  /* line 495, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .drop-down {
     opacity: 1 !important;
     -webkit-transition-duration: 0.2s;
@@ -341,7 +454,7 @@ html, body {
     -o-transition-timing-function: linear;
     transition-timing-function: linear; }
 
-  /* line 355, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 502, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   #tablet-nav {
     opacity: 1 !important;
     -webkit-transition-duration: 0.2s;
@@ -353,22 +466,50 @@ html, body {
     -o-transition-timing-function: linear;
     transition-timing-function: linear; }
 
-  /* line 363, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 510, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .about-us-home-section .left-section {
     width: 100% !important; }
-    /* line 365, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    /* line 512, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .about-us-home-section .left-section .content-container {
       font-size: 14px;
       width: 85% !important; }
-  /* line 372, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 519, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .about-us-home-section .right-section {
     display: none; } }
+@media all and (max-width: 759px) {
+  /* line 528, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .callboxes-list {
+    text-align: center !important; }
+    /* line 531, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    .callboxes-list ul {
+      margin: 0 !important;
+      padding: 0 !important; }
+      /* line 535, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+      .callboxes-list ul li {
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        margin-left: -2px; }
+        /* line 541, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+        .callboxes-list ul li:nth-child(4) {
+          margin-right: 0 !important; }
+
+  /* line 548, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .section-header-container {
+    width: 240px; }
+    /* line 550, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    .section-header-container h2 {
+      font-size: 14px; }
+
+  /* line 557, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  .callboxes-overlay .container {
+    font-size: 17px; } }
 @media all and (max-width: 597px) {
-  /* line 380, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 565, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .nav-container {
     display: none; }
 
-  /* line 384, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 569, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .logo {
     float: left !important;
     position: relative;
@@ -381,7 +522,7 @@ html, body {
     -moz-transition-timing-function: linear;
     -o-transition-timing-function: linear;
     transition-timing-function: linear; }
-    /* line 391, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    /* line 576, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .logo img {
       width: 250px !important;
       -webkit-transition-duration: 0.2s;
@@ -393,7 +534,7 @@ html, body {
       -o-transition-timing-function: linear;
       transition-timing-function: linear; }
 
-  /* line 399, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 584, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   #banner-container img {
     height: 250px !important;
     -webkit-transition-duration: 0.2s;
@@ -405,7 +546,7 @@ html, body {
     -o-transition-timing-function: linear;
     transition-timing-function: linear; }
 
-  /* line 406, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 591, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .banner-contents-container {
     width: 270px;
     height: 200px;
@@ -413,7 +554,7 @@ html, body {
     z-index: 1000;
     margin-top: 0px;
     font-size: 14px; }
-    /* line 414, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    /* line 599, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .banner-contents-container .banner-button {
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
@@ -425,47 +566,46 @@ html, body {
       text-align: center;
       padding: 5px 0 10px 0; }
 
-  /* line 425, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 610, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .about-us-home-section .left-section {
     width: 100% !important;
     float: left !important;
-    padding: 0 !important;
-    margin: 0 !important; }
-    /* line 430, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    padding: 0 !important; }
+    /* line 614, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .about-us-home-section .left-section .content-container {
       width: 90% !important;
       float: left !important; }
-  /* line 436, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 620, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .about-us-home-section .icon-container {
     display: none; }
-  /* line 440, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 624, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .about-us-home-section .right-section {
     display: none; }
 
-  /* line 445, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 629, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .callboxes-list {
     text-align: center !important; }
-    /* line 448, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    /* line 632, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .callboxes-list ul {
       margin: 0 !important;
       padding: 0 !important; }
-      /* line 452, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+      /* line 636, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
       .callboxes-list ul li {
         list-style: none;
         display: inline-block;
         width: 100%;
         margin-left: -2px; }
-        /* line 458, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+        /* line 642, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
         .callboxes-list ul li:nth-child(4) {
           margin-right: 0 !important; }
 
-  /* line 465, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 649, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .section-header-container {
     width: 240px; }
-    /* line 467, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+    /* line 651, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
     .section-header-container h2 {
       font-size: 14px; }
 
-  /* line 474, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
+  /* line 658, /Users/Ricky/Sites/rhino-wash/source/stylesheets/all.scss */
   .callboxes-overlay .container {
-    font-size: 25px; } }
+    font-size: 17px; } }
