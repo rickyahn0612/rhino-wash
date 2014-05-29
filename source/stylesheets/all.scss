@@ -127,7 +127,41 @@ html, body {
         width: 15%;
         display: inline-block;
         color: #fff;
+        position: relative;
         font-weight: 100;
+          ul {
+            width: 153px;
+            list-style: none;
+            position: absolute;
+            left: 35px;
+            top: 60px;
+            padding-top: 0px;
+            // height: 130px;
+            height: 0;
+            overflow: auto;
+            text-align: left;
+            background: white;
+            li {
+              display: block;
+              list-style: none;
+              width: 173px;
+              padding: 0 0 0 10px;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              position: relative;
+              left: -40px;
+              margin-bottom: 20px;
+
+              a {
+                color: black;
+              }
+            }
+          }
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
       }
     }
   }

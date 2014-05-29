@@ -21,6 +21,14 @@ $ ->
       $('.drop-down').animate({'height': 0}, 0)
       state = false
 
+  $('#services').on 'click', (e) ->
+    if state == false
+      $('.sub-nav').animate({'height': 130}, 400)
+      state = true
+    else
+      $('.sub-nav').animate({'height': 0}, 400)
+      state = false
+
   $(window).scroll ->
     winScroll = $(window).scrollTop()
     if winScroll > 200 
