@@ -315,7 +315,9 @@ html, body {
 }
 
 @media all and (max-width: 20000px) {
-
+  .alt-text {
+    opacity: 0 !important;
+  }
   .content-container {
     font-size: 12px;
     width: 75% !important;
@@ -327,6 +329,10 @@ html, body {
 }
 
 @media all and (max-width: 1455px) {
+  .alt-text {
+    opacity: 0 !important;
+  }
+
   .callboxes-list {
     text-align: center !important;
 
@@ -420,7 +426,6 @@ html, body {
 
 @media all and (max-width: 1062px) {
 
-
   .drop-down {
     opacity: 0;
   }
@@ -449,6 +454,15 @@ html, body {
 
 
 @media all and (max-width: 835px) {
+
+  .alt-text {
+    opacity: 0 !important;
+  }
+
+  .bigres-text {
+    opacity: 1 !important;
+  }
+
   .callboxes-list {
     text-align: center !important;
 
@@ -525,6 +539,15 @@ html, body {
 
 @media all and (max-width: 759px) {
 
+  .bigres-text {
+    opacity: 1 !important;
+    font-size: 20px !important;
+  }
+
+  .alt-text {
+    opacity: 0 !important;
+  }
+
     .callboxes-list {
     text-align: center !important;
 
@@ -562,6 +585,14 @@ html, body {
 }
 
 @media all and (max-width: 597px) {
+
+  .bigres-text {
+    opacity: 1 !important;
+  }
+
+  .alt-text {
+    opacity: 0 !important;
+  }
   .nav-container {
     display: none;
   }  
