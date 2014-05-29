@@ -34,6 +34,19 @@
         return state = false;
       }
     });
+    $('#services').on('click', function(e) {
+      if (state === false) {
+        $('.sub-nav').animate({
+          'height': 130
+        }, 400);
+        return state = true;
+      } else {
+        $('.sub-nav').animate({
+          'height': 0
+        }, 400);
+        return state = false;
+      }
+    });
     return $(window).scroll(function() {
       var winScroll;
       winScroll = $(window).scrollTop();
